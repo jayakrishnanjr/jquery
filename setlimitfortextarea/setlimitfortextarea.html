@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>textarealimit</title>
+	    <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	    <!-- jQuery library -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	    <!-- Latest compiled JavaScript -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <style>
+	    	#row1{
+	             background-color: #ffe6e6;
+	             margin-top: 50px;
+	             padding-top: 150px;
+	             padding-bottom: 150px;
+	             box-shadow: 3px 5px 3px 4px; 
+	    	}
+		    textarea{
+		         box-shadow: 3px 5px;
+		    }
+	    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="row1" id="textarea1">
+                <div align="center">
+           	        <form>
+           	   	        <textarea class="textarea1"></textarea>
+           	        </form>
+           	    </div>
+	        </div>   	
+        </div>
+        <!-- script to set limit for text area as 100 -->
+        <script>
+		    $(document).ready(function()  	
+		    {
+		        $(".textarea1").attr('maxlength','100');
+		        /*max length attribute specifies limit in text area*/
+		    });
+	    </script>	
+    </body>
+</html>
