@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>cookie</title>
+	    <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	    <!-- jQuery library -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	    <!-- Latest compiled JavaScript -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <script src="jquery.cookie.js"></script>
+	    <!-- script for adding cookie features -->
+	    <style>
+	        button{
+	        	padding-left: 40px;
+	        	padding-top: 40px;	
+	        }
+	        #row1{
+	        	padding-top: 50px;
+	        	padding-bottom: 50px;
+	        	background-color: #edd0e8;
+	        }
+	        #row2{
+	        	padding-top: 50px;
+	        	padding-bottom: 50px;
+	        	background-color: #cee1e5;
+	        }
+	        #row3{
+	        	padding-top: 50px;
+	        	padding-bottom: 50px;
+	        	background-color:#eeefac;
+	        }
+	    </style>
+	    <!-- webpage that shows how to add,view and delete cookies -->
+	    <!-- 3 buttons are used:first button adds cookie,second is for view and third for delete -->
+		<script>
+			$(document).ready(function(){
+			   $("#button1").click(function(){
+			   	$.cookie('testcookie','value',{expires:7});
+			   	/*first field for name,second for value and 3rd for expire time*/ 
+			   });
+			   $("#button2").click(function(){
+			   	alert($.cookie('testcookie'));
+			   });
+			   $("#button3").click(function(){
+			   	$.removeCookie('testcookie');
+			   }); 			   
+			});
+		</script>
+	</head>
+	<body>
+	<div class="container">
+		<div class="row" id="row1" align="center">
+			<button class="btn btn-success" id="button1">create a new cookie</button>
+		</div>
+		<div class="row" id="row2" align="center">
+			<button class="btn btn-primary" id="button2">view cookies</button>
+		</div>
+		<div class="row" id="row3" align="center">
+			<button class="btn btn-danger" id="button3">remove cookie</button>
+		</div>
+	</div>
+	</body>
+</html>
