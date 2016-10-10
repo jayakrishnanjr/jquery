@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Remove all CSS classes using jQuery</title> 
+	    <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	    <!-- jQuery library -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	    <!-- Latest compiled JavaScript -->
+	    <style>
+	    	.center{
+	    		text-align: center;
+	    	}
+	    	.large{
+	    		font-size: 50px;
+	    	}
+	    </style>
+		<script>
+		/*to remove a class from an element removeClass() is used*/ 
+		 	function remove_classes(){
+		 		    $("#item").removeClass("center");
+		 		    $("#item").removeClass("large");
+		 	}
+		</script> 
+	</head>  
+	<body>
+	    <p id="item" class="center large">This paragraph refers two classes.</p>  
+		<input type="button" value="Click to remove all classes" onClick="remove_classes()" /> 	  
+	</body>  
+</html>
+ 

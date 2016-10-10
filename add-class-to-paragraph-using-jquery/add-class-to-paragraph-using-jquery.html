@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>add class</title>
+	    <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	    <!-- jQuery library -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	    <!-- Latest compiled JavaScript -->
+		<style>  
+		  p {  
+		    margin: 10px;  
+		    font-size: 22px;  
+		  }  
+		  .myclass {  
+		    color: #FA5858;  
+		  }  
+		  .highlight {  
+		    background: #CEF6F5;  
+		  }  
+		</style>
+		<script>
+		    /*to add a class to a element addclass() is used*/ 
+			$(document).ready(function(){
+			   $("#button1").click(function(){
+			   	$("p").addClass("highlight");
+			 });			   
+			});
+		</script>  
+	</head>  
+	<body>  
+		<p>jQuery Exercises</p>  
+		<p>and Solution.</p>  
+		<button id="button1">Click to see the effect</button>  
+    </body>  
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>change color</title>
+	    <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	    <!-- jQuery library -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	    <!-- Latest compiled JavaScript -->
+	    <style type="text/css">  
+	      button {  
+	      display: block;  
+	      margin: 20px 0 0 0;  
+	      }   
+	    </style>
+	    <script>
+	        /*css function used to enable css styles*/ 
+	    	$(document).ready(function(){
+	    	   $("#button1").click(function(){
+	    	   	$("#textarea1").css("background-color", "red");
+	    	 });			   
+	    	});
+	    </script>  
+	</head>  
+	<body> 
+         <textarea id="textarea1">TutoRIAL</textarea> 
+     	 <p>jQuery</p>  
+         <span>Exercises</span>    
+         <button id="button1">Click to see the effect</button>   	
+	</body>  
+</html>

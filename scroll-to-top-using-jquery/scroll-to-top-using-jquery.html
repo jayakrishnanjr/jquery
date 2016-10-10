@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>scroll top</title> 
+	    <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	    <!-- jQuery library -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	    <!-- Latest compiled JavaScript -->
+	    <style>
+	    	#row1{
+	    		padding-top: 80px;
+	    		background-color:#d5dbe5;
+	    		padding-bottom: 80px;
+	    	}
+	    	#row2{
+	    		padding-top: 80px;
+	    		padding-bottom: 80px;
+	    		background-color:#d5dbe5;
+	    	}
+	    	#row3{
+	    		padding-top: 80px;
+	    		padding-bottom: 80px;
+	    		background-color:#f4d0f1;
+	    	}
+	    	#row4{
+	    		padding-top: 80px;
+	    		background-color:#d0db55;
+	    		padding-bottom: 80px;
+	    	}
+	    	#row4{
+	    		padding-top: 80px;
+	    		background-color:#56db55;
+	    		padding-bottom: 80px;
+	    	}
+	    </style>
+		<script>
+			/*script that enables webpage to scroll up*/
+			/*when click on the button at the end of the page it scroll to the top */ 
+			$(document).ready(function(){
+			   $('#button1').on("click",function() {
+			       $('html, body').animate({ scrollTop: 0 }, 'slow');
+			   });		   
+			});
+		</script> 
+	</head> 
+	 <!--body part  -->
+	<body>
+	    <div class="container">
+	        <h1 style="text-align:center">scroll top</h1>
+	    	<div class="row" id="row1" align="center">
+	    	   <h1 id="heading">This webpage is to test scrolltop</h1> 		
+	    	</div>
+	    	<div class="row" id="row2" align="center">
+	    	   <h1>this example gives you clear idea about scroll to top</h1>
+	    	</div>
+	    	<div class="row" id="row3" align="center">
+	    	   <h1>jquery is used here</h1>
+	    	</div>
+	    	<div class="row" id="row4" align="center">
+	    	   <h1>you can click the button below and see the effect</h1>
+	    	</div>
+	    	<div class="row" id="row5" align="center">
+	    	   <button id="button1" class="btn btn-success">scrolltop</button>
+	    	</div>
+	    </div> 	  
+	</body>  
+</html>
+ 
+
